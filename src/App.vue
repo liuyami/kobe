@@ -5,10 +5,13 @@
 </template>
 
 <script>
-  import Loading from './components/Loading.vue'
+  import Loading from './components/Loading.vue';
+
 
   export default {
     name: 'App',
+
+
     components: {
       Loading
     }
