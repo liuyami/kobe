@@ -1,5 +1,5 @@
 <template>
-    <div class="Loader" id="loader" @click="playSound">
+    <div class="Loader" id="loader" @click="playStartSound">
         <div class="shoes">
             <div class="tips">请戴上耳机</div>
         </div>
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-    import { startSound } from "./Sounds";
+    import {startSound} from "../assets/js/Sounds";
 
     export default {
         name: "Loading",
         methods: {
-            playSound: function () {
+            playStartSound: function () {
                 console.log('click event');
                 startSound.play();
             }
